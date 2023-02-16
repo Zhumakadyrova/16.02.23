@@ -34,4 +34,42 @@ if(example3.includes(6)) {
 }
 else{ console.log("No");
 }
+let example4 = [5, 4, 1, 55, 1, 0, 2];
+let example5 = [3, 11, 4, 15, 1, 2, 77];
+let arrResult = []
+function arrSort() {
+  example4.forEach(value => {
+    if(example5.includes(value) && !arrResult.includes(value)) {
+      arrResult.push(value)
+    }
+  })
+  return arrResult
+}
+let result = arrSort();
+console.log(result);
 
+
+let example6 = [6, 7, 8, 1, 2, 10, 1, 20];
+let example7 = [8, 9, 2, 22, 3, 8, 2, 10];
+let result2 = [];
+function sort() {
+  example6.forEach(value => {
+    if(example7.includes(value) && !result2.includes(value)) {
+      result2.push(value)
+    }
+  })
+  return result2
+}
+let finalResult = sort();
+console.log(finalResult);
+
+let example8 = [5, 4, 1, 55, 1, 0, 2];
+let example9 = [3, 11, 4, 15, 1, 2, 77];
+
+for( let i =0; i < example8.length; i ++) {
+  if( example9.includes(example8[i])) {
+    console.log(example8[i]);
+  }
+}
+ let example10 = ["a", "c", "f", "d", "b"];
+ console.log(example10.reverse());
